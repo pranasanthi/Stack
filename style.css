@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500&display=swap');
+
+:root{
+    --TextColor: maroon;
+    --SecondTextColor: black;
+    --BorderColor: white;
+    --LineColor: grey;
+    --Sectionpadding: 6rem 0;
+    --itemborderradius: 0.7 rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+h1,h2,h3,h4,h5,h6, strong{
+    color:var(--TextColor);
+}
+p{font-size: 16px;
+line-height: 1.9rem;
+}
+
+p,span,label,input,textarea,li{
+    color:var(--SecondTextColor);
+}
+a{text-decoration: none;}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+@media screen and (max-widht:1200px){
+    .main-container{
+        width: 90%;
+    }
+}
+.pre-title{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--SecondTextColor);
+    position: inherit;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    /*background-color:bisque;
+    box-shadow: -8px 10px 65px -20px rgba(57, 3, 3, 0.768);
+    -webkit-box-shadow: -8px 10px 65px -20px rgba(57, 3, 3, 0.768);
+    -moz-box-shadow: -8px 10px 65px -20px rgba(57, 3, 3, 0.768);;*/
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: ; 600;
+    font-size: 32px;
+}
+.logo a{
+    color: var(--TextColor);
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    color: var(--TextColor);
+}
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
